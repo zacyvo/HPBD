@@ -7,9 +7,7 @@ const renderTime = ({ remainingTime }) => {
 
   return (
     <div className="timer">
-      <div className="text">Đợi xíu nha</div>
-      <div className="value">{remainingTime}</div>
-      <div className="text">giây</div>
+      <div className="value" style={{color: 'red'}}>{remainingTime}</div>
     </div>
   );
 };
@@ -20,7 +18,7 @@ const Wait5s = (innerWidth, innerHeight) => {
     <div className='countdown' style={{ width: innerWidth, height: innerHeight}}>
       <CountdownCircleTimer
         isPlaying
-        duration={5}
+        duration={2}
         colors={["#004777", "#F7B801", "#A30000", "#A30000"]}
         colorsTime={[10, 6, 3, 0]}
         onComplete={() => ({ shouldRepeat: true, delay: 1 })}

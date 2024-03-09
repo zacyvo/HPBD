@@ -59,8 +59,7 @@ const Heart = ({ showText = false, indexImg = 0 }) => {
                 <MovingComponent
                   type="typewriter"
                   dataText={[
-                    'Linh ơi! Cảm ơn vk đã đến với cuộc đời của ck',
-                    'Cảm ơn vk đã cho ck cơ hội được ở bên vk.'
+                    'HAPPY BIRTHDAY BÀ NỘI'
                   ]} />
               </div> : ''}
           <div className="absolute">

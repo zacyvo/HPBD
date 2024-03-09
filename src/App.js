@@ -21,7 +21,7 @@ function App() {
       myAudio.play();
       setTimeout(() => {
         setStart(true)
-      }, 5500);
+      }, 1500);
     }
   }, [countdown])
 
@@ -46,7 +46,7 @@ function App() {
   return (
     <div>
       {
-        countTime ?
+        !countTime ?
           <>
             <Heart showText={start} indexImg={indexImg}/>
             <div className='onTop' style={{ display: start ? 'none' : '' }}>
@@ -74,7 +74,7 @@ function App() {
                 <audio
                   id="myAudio"
                   controls={false}
-                  src='https://firebasestorage.googleapis.com/v0/b/rec-user.appspot.com/o/music.mp3?alt=media&token=a440b6b6-ebe4-485d-bbbb-5d6d52be0405'>
+                  src='https://firebasestorage.googleapis.com/v0/b/linh-anna.appspot.com/o/HPBD_PTD.mp3?alt=media&token=94f6f44f-d1c4-482a-892f-0424d9245f5a'>
                 </audio>
               </div>
             </div>
