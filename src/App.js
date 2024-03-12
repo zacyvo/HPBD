@@ -46,7 +46,7 @@ function App() {
   return (
     <div>
       {
-        !countTime ?
+        true ?
           <>
             <Heart showText={start} indexImg={indexImg}/>
             <div className='onTop' style={{ display: start ? 'none' : '' }}>
